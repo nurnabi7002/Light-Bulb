@@ -1,0 +1,90 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Light Bulb</title>
+  <style>
+  
+    * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+
+.bulb {
+  height: 700px;
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 50px;
+  
+}
+
+#bp {
+  height: 300px;
+  padding: 50px;
+  margin-left: 60px;
+}
+
+#light {
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  margin-left: 240px;
+  margin-top: -550px;
+  
+}
+
+button {
+  margin-left: 250px;
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  border: none;
+}
+
+#on {
+  background: blue;
+}
+
+#off {
+  background: red;
+}
+
+  </style>
+</head>
+<body>
+  
+
+  <div class="bulb">
+     
+    <img src="bulb.png" id="bp"> <br>
+    <br>
+    
+    <button id="on" onclick="on();">On</button> <br>
+    <button id="off" onclick="off();">Off</button>
+  </div>
+  
+   <div id="light"></div>
+  
+  
+  <script>
+  
+  function on() {
+    document.getElementById("light").style.boxShadow="0px -30px 120px 150px #EEFF00"
+  }
+  
+  function off() {
+   document.getElementById("light").style.boxShadow="0px 0px 0px 0px black"
+  }
+
+</script>
+</body>
+</html>
